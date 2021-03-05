@@ -50,6 +50,7 @@ class NoteDatabase(context: Context?) {
         }
     }
 
+
     fun update(note: Note) {
         val values = fromNote(note)
         helper.writableDatabase.update(_TABLE_NAME,
